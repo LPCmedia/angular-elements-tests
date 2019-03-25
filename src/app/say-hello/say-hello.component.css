@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: hotpink; 
+  height: 200px;
+  width: 200px;
+  border: 1px dashed black;
+
+}
+
+:host > input[type=button] {
+  height: 50px;
+  display: block;
+}

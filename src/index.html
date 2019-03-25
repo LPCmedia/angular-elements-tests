@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ElementsApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-say-hello></app-say-hello>
+
+  <script>
+    const helloCmp = document.querySelector('app-say-hello');
+
+    helloCmp.addEventListener('hello', (event) => {
+      console.log(`"hello" emitted: ${event.detail}`);
+    })
+
+    // simulate document.ready
+    setTimeout(() => helloCmp.name = "foo", 3000 );
+  </script>
+</body>
+</html>
